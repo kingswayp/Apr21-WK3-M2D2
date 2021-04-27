@@ -1,0 +1,141 @@
+<!--
+ASSIGNMENT RULES
+- The solution must be pushed to the repository and linked to EduFlow by the end of the day.
+- You can google / use StackOverflow BUT we suggest you to use just the material provided.
+- To test the page, just open it with your default browser.
+- Use Bootstrap4.6 classes to render the page.
+- Use containers, rows and cols in order to achieve a great responsive layout.
+
+ASSIGNMENT TOPIC
+You are creating a website to showcase your favourite music albums.
+In this page you'd have a short biography section of yourself, and the top albums of your life, 
+the worst album you ever listened to and everything related to the music you love.
+
+NOTE:
+Most of the times, even the most expert of designers need inspiration.
+Spend 30 minutes surfing the web and searching the best way of rapresenting the album you love the most.
+Could be the Amazon way, the Spotify or Apple music way or some other blog out there.
+-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+   <link rel="stylesheet" href="ourstyle.css" />
+    <title>FAVOURITE MUSIC ALBUMS</title>
+  </head>
+  <body>
+
+    <!--
+        We want to create a music store.
+        On the small devices we want to see 2 discs per row
+        On the tablets 4 per row
+        On the big screen 6 per row
+    -->
+
+    <div class="container-fluid">
+        </div>
+
+        <div class="jumbotron">
+            <h1 class="display-4">MY FAVOURITE MUSIC ALBUM PLAYLIST!</h1>
+            <p class="lead">As an ardent music lover, I have never listened to an album I disliked. Music to me is all about perspective. Its about understanding the reason behind the lyrics, the story behind the symphony and the spirit in the sound.</p>
+            <hr class="my-4">
+            <p>This playlist consists of songs and albums that spoke to me at a point in my life when I felt like no one else was listening. I hope that it can be the light at the end of your tunnel as well. have a good listen!</p>
+            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+          </div>
+
+        <div class="alert alert-danger" role="alert">
+            PLAYLIST!
+          </div>
+
+
+        <div class="row " id="albums">
+            <div class="col-6 col-md-3 col-lg-2">
+                <img src="data:image/jpeg;base64,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" alt="album cover" class="img-fluid" />
+                <p>Studio album by Burna Boy</p>
+                <p>Tracklist</p>
+                <ol>
+                    <li>Intro: My Life</li>
+                    <br>
+                    <li>No No No</li>
+                    <br>
+                    <li>Abeg Abeg (Remix)</li>
+                    <br>
+                    <li>Na So E Suppose Be</li>
+                    <br>
+                    <li>Run My Race</li>
+                </ol>
+                <span class="badge badge-success">LISTEN</span>
+            </div>
+            <div class="col-6 col-md-3 col-lg-2">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/40/Twice_as_Tall_Burna_Boy_Album.jpg/220px-Twice_as_Tall_Burna_Boy_Album.jpg" alt="album cover" class="img-fluid" />
+                <p>Studio album by Burna Boy</p>
+                <p>Tracklist</p>
+                <ol>
+                    <li>Level Up (ft. Youssou)</li>
+                    <br>
+                    <li>Alarm Clock</li>
+                    <br>
+                    <li>Way Too Big</li>
+                    <br>
+                    <li>Bebo</li>
+                    <br>
+                    <li>Wonderful</li>
+                </ol>
+                <span class="badge badge-success">LISTEN</span>
+            </div>
+            <div class="col-6 col-md-3 col-lg-2">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/6e/Burna_Boy_-_African_Giant.png/220px-Burna_Boy_-_African_Giant.png" alt="album cover" class="img-fluid" />
+                <p>Studio album By Burna Boy</p>
+                <p>Tracklist</p>
+                <ol>
+                    <li>African Giant</li>
+                    <br>
+                    <li>Anybody</li>
+                    <br>
+                    <li>Wetin Man Go Do</li>
+                    <br>
+                    <li>Dangote</li>
+                    <br>
+                    <li>Gum Body(ft. Jorja)</li>
+                </ol>
+                <span class="badge badge-success">LISTEN</span>
+            </div>
+            <div class="col-6 col-md-3 col-lg-2">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/96/Burna_Boy_-_Outside_album_cover.jpg/220px-Burna_Boy_-_Outside_album_cover.jpg" alt="album cover" class="img-fluid" />
+                <p>Studio album By Burna Boy</p>
+                <p>Tracklist</p>
+                <ol>
+                    <li>More Life</li>
+                    <br>
+                    <li>Ph City Vibration</li>
+                    <br>
+                    <li>Koni Baje</li>
+                    <br>
+                    <li>Sekkle Down(ft.J Hus)</li>
+                    <br>
+                    <li>Where I'm From</li>
+                </ol>
+                <span class="badge badge-success">LISTEN</span>
+            </div>
+            <div class="col-6 col-md-3 col-lg-2">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d2/Soundsfromtheotherside.png/220px-Soundsfromtheotherside.png" alt="album cover" class="img-fluid" />
+                <p>Studio album by Wizkid</p>
+                <p>Tracklist</p>
+                <ol>
+                    <li>Sweet Love</li>
+                    <br>
+                    <li>Come Closer(ft. Drake)</li>
+                    <br>
+                    <li>Naughty Ride</li>
+                    <br>
+                    <li>African Bad Gyal</li>
+                    <br>
+                    <li>Daddy Yo(ft.Efya)</li>
+                </ol>
+                <span class="badge badge-success">LISTEN</span>
+            </div>
+        </div>
+  </body>
+</html> 
